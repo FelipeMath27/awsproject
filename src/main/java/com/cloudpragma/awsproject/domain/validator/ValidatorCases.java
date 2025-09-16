@@ -1,6 +1,6 @@
 package com.cloudpragma.awsproject.domain.validator;
 
-import com.cloud.awsprj.domain.model.TypeDocumentEnum;
+import com.cloudpragma.awsproject.domain.model.TypeDocumentEnum;
 
 import java.time.LocalDate;
 import java.time.Period;
@@ -40,10 +40,10 @@ public class ValidatorCases {
                                                           String documentNumber){
         return Optional.ofNullable(typeDocument)
                 .flatMap(t -> sanitize(documentNumber)
-                .filter(doc -> switch (t){
-                    case CC, CE, TI -> doc.matches(NUMERIC_DOCUMENT_REGEX);
-                    case PS -> doc.matches(PASSPORT_REGEX);
-                }));
+                        .filter(doc -> switch (t){
+                            case CC, CE, TI -> doc.matches(NUMERIC_DOCUMENT_REGEX);
+                            case PS -> doc.matches(PASSPORT_REGEX);
+                        }));
     }
 
     /**Regex to validate if the user is adult*/
