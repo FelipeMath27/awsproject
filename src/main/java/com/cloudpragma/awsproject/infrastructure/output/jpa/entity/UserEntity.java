@@ -10,7 +10,7 @@
     import java.time.LocalDate;
 
     @Entity
-    @Table(name = "PRG_TBL_USERS")
+    @Table(name = "prg_tbl_users")
     @Getter
     @Setter
     @NoArgsConstructor
