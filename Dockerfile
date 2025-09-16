@@ -1,4 +1,4 @@
-
+#Info to create container image with docker
 FROM eclipse-temurin:17-jdk-alpine
 
 WORKDIR /app
