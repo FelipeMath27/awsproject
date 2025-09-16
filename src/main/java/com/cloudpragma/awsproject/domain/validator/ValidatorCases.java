@@ -1,6 +1,6 @@
 package com.cloudpragma.awsproject.domain.validator;
 
-import com.cloud.awsprj.domain.model.TypeDocumentEnum;
+import com.cloudpragma.awsproject.domain.model.TypeDocumentEnum;
 
 import java.time.LocalDate;
 import java.time.Period;
