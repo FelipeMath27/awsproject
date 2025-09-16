@@ -25,12 +25,16 @@ public class UseCaseUser implements IUserServicePort {
     private void validateInfoUser(User user) {
         user.setEmail(ValidatorCases.validateEmail(user.getEmail())
                 .orElseThrow(() -> new DomainException(ConstantsErrorMessages.INVALID_EMAIL_FORMAT)));
-        user.setPhoneNumberUser(ValidatorCases.validatePhoneNumber(user.getPhoneNumberUser())
+        user.setPhoneNumber(ValidatorCases.validatePhoneNumber(user.getPhoneNumber())
                 .orElseThrow(() -> new DomainException(ConstantsErrorMessages.INVALID_PHONE_NUMBER_FORMAT)));
-        user.setNameUser(ValidatorCases.sanitize(user.getNameUser())
+        user.setName(ValidatorCases.sanitize(user.getName())
                 .orElseThrow(() -> new DomainException(ConstantsErrorMessages.NAME_CANT_BE_NULL)));
-        user.setLastNameUser(ValidatorCases.sanitize(user.getLastNameUser())
+        user.setLastName(ValidatorCases.sanitize(user.getLastName())
                 .orElseThrow(() -> new DomainException(ConstantsErrorMessages.LAST_NAME_CANT_BE_NULL)));
+        user.setDateBirth(user.getDateBirth());
+        user.setDocument(user.getDocument());
+        user.setTypeDocument(user.getTypeDocument());
+        user.setPassword(user.getPassword());
     }
 
     @Override

@@ -13,12 +13,12 @@ import java.time.LocalDate;
 @AllArgsConstructor
 public class User {
     private Long idUser;
-	private String nameUser;
-	private String lastNameUser;
-    private TypeDocumentEnum typeDocumentUser;
-    private String documentUser;
-	private String phoneNumberUser;
-	private LocalDate dateBirthUser;
+	private String name;
+	private String lastName;
+    private TypeDocumentEnum typeDocument;
+    private String document;
+	private String phoneNumber;
+	private LocalDate dateBirth;
 	private String email;
     private String password;
 }

@@ -4,13 +4,11 @@ import com.cloudpragma.awsproject.domain.api.IUserServicePort;
 import com.cloudpragma.awsproject.domain.spi.IUserPersistencePort;
 import com.cloudpragma.awsproject.domain.usecase.UseCaseUser;
 import io.github.cdimascio.dotenv.Dotenv;
-import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 
-import java.util.Objects;
 import java.util.Properties;
 
 @RequiredArgsConstructor

@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.*;
 @Slf4j
 public class UserRestController {
 
-    private IUserHandler iUserHandler;
+    private final IUserHandler iUserHandler;
 
     @PostMapping("/create-user")
     public ResponseEntity<Void> createUser(@RequestBody @Valid UserDTORequest userDTORequest){

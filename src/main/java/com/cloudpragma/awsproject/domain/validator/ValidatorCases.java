@@ -40,10 +40,10 @@ public class ValidatorCases {
                                                           String documentNumber){
         return Optional.ofNullable(typeDocument)
                 .flatMap(t -> sanitize(documentNumber)
-                .filter(doc -> switch (t){
-                    case CC, CE, TI -> doc.matches(NUMERIC_DOCUMENT_REGEX);
-                    case PS -> doc.matches(PASSPORT_REGEX);
-                }));
+                        .filter(doc -> switch (t){
+                            case CC, CE, TI -> doc.matches(NUMERIC_DOCUMENT_REGEX);
+                            case PS -> doc.matches(PASSPORT_REGEX);
+                        }));
     }
 
     /**Regex to validate if the user is adult*/
