@@ -1,0 +1,8 @@
+# evita incluir archivos innecesarios o sensibles en la imagen
+.git
+.gitignore
+Dockerfile
+*.md
+*.log
+.env
+target/*-sources.jar
